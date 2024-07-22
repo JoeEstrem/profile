@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(248, 248, 248);
+  align-content: center;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: rgb(25, 25, 25);
+}
+
+.portrait {
+  background: url(images/IMG_4851-darker.png);
+  background-repeat: no-repeat;
+  background-position: 50% 83%;
+  background-size: 642px;
+  height: 100%;
+}
+
+.p-c-2{
+  padding: 5px 0px 25px 0px;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(25, 25, 25);
+}
+
+.img-rectangle {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  background-color: rgb(253, 253, 253);
+  border: 2px solid rgb(100, 100, 100);
+  box-shadow: 2px 2px 2px #c8c8c8;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Optional: adds space between columns */
+  padding: 20px;
+  margin: 0 auto;
+  width: 800px;
+  padding: 20px 40px 20px 40px;
+}
+
+.grid-item-2 {
+  padding: 40px;
+}
+
+.grid-item-3 {
+  padding: 40px 20px;
+  border: 2px solid rgb(100, 100, 100);
+  background-color: rgb(253, 253, 253);
+  box-shadow: 2px 2px 2px #c8c8c8;
+  text-align: center;
+}
+
+.fa-regular, .fa-solid {
+  font-size: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  display: inline;
+  font-size: 24px;
+  margin: 0 8px;
+}
+
+.div-standard {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.blk-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  background-color: rgb(25, 25, 25);
+  box-shadow: 2px 2px 2px #c8c8c8;
+  color: rgb(253, 253, 253);
+  padding: 10px 40px;
+}
+
+.blk-button:hover {
+  background-color: #05f;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.icon{
+  color: rgb(25, 25, 25);
+}
+
+.icon:hover {
+  color: #05f;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/*
+.grid-container-2:hover {
+  border: 2px solid #05f;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.grid-item-3:hover{
+  border: 2px solid #05f;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+*/
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 700px;
+  }
+}
